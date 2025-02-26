@@ -58,7 +58,7 @@ static void topple(int grid[3][3])
 		{
 			if (grid[i][j] > 3)
 			{
-				grid_tmp[i][j] -= 4;
+				grid_tmp[i][j] -= 4; // Enlever 4 grains de sable
 				if (i > 0)
 					grid_tmp[i - 1][j]++;
 				if (i < 2)

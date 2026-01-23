@@ -3,7 +3,8 @@
 #include "menger.h"
 
 /**
- * is_filled - Determines if a given coordinate (x, y) is filled in the Menger sponge.
+ * is_filled - Determines if a given coordinate (x, y) is
+ * filled in the Menger sponge.
  * @x: The x-coordinate.
  * @y: The y-coordinate.
  *

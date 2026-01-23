@@ -2,6 +2,13 @@
 #include <math.h>
 #include "menger.h"
 
+/**
+ * is_filled - Determines if a given coordinate (x, y) is filled in the Menger sponge.
+ * @x: The x-coordinate.
+ * @y: The y-coordinate.
+ *
+ * Return: 1 if the coordinate is filled, 0 otherwise.
+ */
 static int is_filled(int x, int y)
 {
 	while (x > 0 || y > 0)
@@ -14,6 +21,12 @@ static int is_filled(int x, int y)
 	return (1);
 }
 
+/**
+ * menger - Generates the Menger sponge of a specified level.
+ * @level: The level of the Menger sponge to generate.
+ *
+ * Return: None.
+ */
 void menger(int level)
 {
 	int size, x, y;
